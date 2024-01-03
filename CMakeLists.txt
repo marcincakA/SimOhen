@@ -3,4 +3,6 @@ project(SimOhenKlient)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(SimOhenKlient main.cpp)
+add_executable(SimOhenKlient main.cpp
+        Class/Biotop.cpp
+        Class/Biotop.h)
