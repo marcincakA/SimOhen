@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="SimOhenServer"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SimOhenServer">
+				<Option output="C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/SimOhenServer.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 SimOhenServer"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SimOhenServer/fast">
+				<Option output="C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/SimOhenServer.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 SimOhenServer/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/Server/active_socket.c">
+			<Option target="SimOhenServer"/>
+		</Unit>
+		<Unit filename="C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/Server/active_socket.h">
+			<Option target="SimOhenServer"/>
+		</Unit>
+		<Unit filename="C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/Server/buffer.h">
+			<Option target="SimOhenServer"/>
+		</Unit>
+		<Unit filename="C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/Server/char_buffer.c">
+			<Option target="SimOhenServer"/>
+		</Unit>
+		<Unit filename="C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/Server/char_buffer.h">
+			<Option target="SimOhenServer"/>
+		</Unit>
+		<Unit filename="C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/Server/linked_list.h">
+			<Option target="SimOhenServer"/>
+		</Unit>
+		<Unit filename="C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/Server/main.c">
+			<Option target="SimOhenServer"/>
+		</Unit>
+		<Unit filename="C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/Server/passive_socket.c">
+			<Option target="SimOhenServer"/>
+		</Unit>
+		<Unit filename="C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/Server/passive_socket.h">
+			<Option target="SimOhenServer"/>
+		</Unit>
+		<Unit filename="C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
