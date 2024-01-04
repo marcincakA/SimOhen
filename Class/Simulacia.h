@@ -179,7 +179,7 @@ public:
                 if (biotop[x + 1][y].isFlamable()) {
                     int pravdepodobnostPoziaru = dis(gen);
                     if (pravdepodobnostPoziaru <= 20) { // 20 percentna sanca na poziar
-                        biotop[x - 1][y].setStav(POZIAR);
+                        biotop[x + 1][y].setStav(POZIAR);
                     }
                 }
             }
@@ -187,7 +187,7 @@ public:
                 if (biotop[x][y - 1].isFlamable()) {
                     int pravdepodobnostPoziaru = dis(gen);
                     if (pravdepodobnostPoziaru <= 20) { // 20 percentna sanca na poziar
-                        biotop[x - 1][y].setStav(POZIAR);
+                        biotop[x][y - 1].setStav(POZIAR);
                     }
                 }
             }
@@ -222,7 +222,7 @@ public:
                 if (biotop[x][y - 1].isFlamable()) {
                     int pravdepodobnostPoziaru = dis(gen);
                     if (pravdepodobnostPoziaru <= 20) { // 20 percentna sanca na poziar ostava ako pri bezvetri
-                        biotop[x - 1][y].setStav(POZIAR);
+                        biotop[x][y - 1].setStav(POZIAR);
                     }
                 }
             }
@@ -230,7 +230,7 @@ public:
                 if (biotop[x][y + 1].isFlamable()) {
                     int pravdepodobnostPoziaru = dis(gen);
                     if (pravdepodobnostPoziaru <= 20) { // 20 percentna sanca na poziar ostava ako pri bezvetri
-                        biotop[x - 1][y].setStav(POZIAR);
+                        biotop[x][y + 1].setStav(POZIAR);
                     }
                 }
             }
@@ -248,7 +248,7 @@ public:
                 if (biotop[x + 1][y].isFlamable()) {
                     int pravdepodobnostPoziaru = dis(gen);
                     if (pravdepodobnostPoziaru <= 20) { // 2 percentna sanca na poziar
-                        biotop[x - 1][y].setStav(POZIAR);
+                        biotop[x + 1][y].setStav(POZIAR);
                     }
                 }
             }
@@ -256,7 +256,7 @@ public:
                 if (biotop[x][y - 1].isFlamable()) {
                     int pravdepodobnostPoziaru = dis(gen);
                     if (pravdepodobnostPoziaru <= 2) { // 2 percentna sanca na poziar
-                        biotop[x - 1][y].setStav(POZIAR);
+                        biotop[x][y - 1].setStav(POZIAR);
                     }
                 }
             }
@@ -264,7 +264,7 @@ public:
                 if (biotop[x][y + 1].isFlamable()) {
                     int pravdepodobnostPoziaru = dis(gen);
                     if (pravdepodobnostPoziaru <= 90) { // 90 percentna sanca na poziar
-                        biotop[x - 1][y].setStav(POZIAR);
+                        biotop[x][y + 1].setStav(POZIAR);
                     }
                 }
             }
@@ -282,7 +282,7 @@ public:
                 if (biotop[x + 1][y].isFlamable()) {
                     int pravdepodobnostPoziaru = dis(gen);
                     if (pravdepodobnostPoziaru <= 90) { // 90 percentna sanca na poziar
-                        biotop[x - 1][y].setStav(POZIAR);
+                        biotop[x + 1][y].setStav(POZIAR);
                     }
                 }
             }
@@ -290,7 +290,7 @@ public:
                 if (biotop[x][y - 1].isFlamable()) {
                     int pravdepodobnostPoziaru = dis(gen);
                     if (pravdepodobnostPoziaru <= 20) { // 2 percentna sanca na poziar
-                        biotop[x - 1][y].setStav(POZIAR);
+                        biotop[x][y - 1].setStav(POZIAR);
                     }
                 }
             }
@@ -298,7 +298,7 @@ public:
                 if (biotop[x][y + 1].isFlamable()) {
                     int pravdepodobnostPoziaru = dis(gen);
                     if (pravdepodobnostPoziaru <= 20) { // 90 percentna sanca na poziar
-                        biotop[x - 1][y].setStav(POZIAR);
+                        biotop[x][y + 1].setStav(POZIAR);
                     }
                 }
             }
@@ -316,7 +316,7 @@ public:
                 if (biotop[x + 1][y].isFlamable()) {
                     int pravdepodobnostPoziaru = dis(gen);
                     if (pravdepodobnostPoziaru <= 20) { // 2 percentna sanca na poziar
-                        biotop[x - 1][y].setStav(POZIAR);
+                        biotop[x + 1][y].setStav(POZIAR);
                     }
                 }
             }
@@ -324,7 +324,7 @@ public:
                 if (biotop[x][y - 1].isFlamable()) {
                     int pravdepodobnostPoziaru = dis(gen);
                     if (pravdepodobnostPoziaru <= 90) { // 90 percentna sanca na poziar
-                        biotop[x - 1][y].setStav(POZIAR);
+                        biotop[x][y - 1].setStav(POZIAR);
                     }
                 }
             }
@@ -332,7 +332,7 @@ public:
                 if (biotop[x][y + 1].isFlamable()) {
                     int pravdepodobnostPoziaru = dis(gen);
                     if (pravdepodobnostPoziaru <= 2) { // 2 percentna sanca na poziar
-                        biotop[x - 1][y].setStav(POZIAR);
+                        biotop[x][y + 1].setStav(POZIAR);
                     }
                 }
             }

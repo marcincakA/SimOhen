@@ -1,3 +1,3 @@
-/tmp/tmp.oq6NcEKiNG/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/tmp/tmp.oq6NcEKiNG/cmake-build-debug/CMakeFiles/edit_cache.dir
-/tmp/tmp.oq6NcEKiNG/cmake-build-debug/CMakeFiles/SimOhenKlient.dir
+C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/CMakeFiles/SimOhenKlient.dir
+C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Skola/3 rocnik/SEMESTER 5/PoS/SimOhen/cmake-build-debug/CMakeFiles/rebuild_cache.dir
