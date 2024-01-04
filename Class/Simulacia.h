@@ -24,6 +24,10 @@ private:
     VietorEnum vietor;
     unsigned int pocetSimulacii = 0;
     unsigned int zaciatokVetra = 0;
+    std::random_device rd;
+    std::mt19937 gen;
+    std::uniform_int_distribution<> dis;
+
 public:
     Simulacia(int sizeX, int sizeY) : sizeX(sizeX), sizeY(sizeY) {
         biotop = new Biotop*[sizeX];
@@ -31,6 +35,8 @@ public:
             biotop[i] = new Biotop[sizeY];
         }
         this->vietor = BEZVETRIE;
+        this->gen = std::mt19937(rd());
+        this->dis = std::uniform_int_distribution<>(0, 100);
     };
     ~Simulacia() {
         // Deallocate memory for the 2D array
@@ -125,9 +131,7 @@ public:
             }
 
             if(this->vietor == BEZVETRIE) {
-                std::random_device rd;
-                std::mt19937 gen(rd());
-                std::uniform_int_distribution<> dis(0, 100);
+
                 int cislo = dis(gen);
                 if (cislo <= 90) {
                     this->vietor = BEZVETRIE;
@@ -161,9 +165,6 @@ public:
             return;
         }
 
-        std::random_device rd;
-        std::mt19937 gen(rd());
-        std::uniform_int_distribution<> dis(0, 100);
         //*******************BEZVETRIE*******************//
         if (this->vietor == BEZVETRIE) {
             if (positionIsValid(x - 1, y)) {
@@ -372,9 +373,6 @@ public:
             std::cout << "Zadana pozicia nie je validna" << std::endl;
             return;
         }
-        std::random_device rd;
-        std::mt19937 gen(rd());
-        std::uniform_int_distribution<> dis(0, 100);
         int pravdepodobnost = dis(gen);
         if (this->biotop[x][y].getStav() == ZHORENA) {
             Biotop* foundBiotop = findBiotopNear(x, y, VODA);
@@ -402,7 +400,10 @@ public:
             for(int j = 0; j < sizeY; j++) {
                 if (biotop[i][j].getStav() == POZIAR) {
                     setFireArround(i, j);
-                    biotop[i][j].setStav(ZHORENA);
+                    biotop[i][j].setZaciatokHorenia(this->pocetSimulacii);
+                    if (this->biotop[i][j].getZaciatokHorenia() + 5 <= this->pocetSimulacii) {
+                        biotop[i][j].setStav(ZHORENA);
+                    }
                 }
                 regenerateBiotop(i, j);
             }

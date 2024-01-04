@@ -19,6 +19,7 @@ class Biotop {
 private:
     int posX, posY;
     BiotopEnum stav;
+    int zaciatokHorenia;
     bool zhorena;
 public:
     Biotop() {
@@ -26,6 +27,7 @@ public:
         this->posY = 0;
         this->stav = LES;
         this->zhorena = false;
+        this->zaciatokHorenia = 0;
     }
     Biotop(int posX,int posY,BiotopEnum stav) {
         this->posX = posX;
@@ -61,7 +63,13 @@ public:
     bool isFlamable() {
         return stav == LES || stav == LUKA;
     }
-
+    //getter setter
+    int getZaciatokHorenia() {
+        return this->zaciatokHorenia;
+    }
+    void setZaciatokHorenia(int Horenia) {
+        this->zaciatokHorenia = zaciatokHorenia;
+    }
 };
 
 
