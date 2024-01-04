@@ -38,7 +38,7 @@ int main() {
         simulacia.step();
         simulacia.print();
         // TODO: Nejak to nefunguje jak by to malo! Wtf kaslem na to idem spat...
-        if (iskeypressed( 500 )) { // kontroluje, či bola stisknuta nejaka klavesa
+        if (iskeypressed( 500 )) { // kontroluje, či bola stisknuta nejaka klavesa...
             std::cout << "Press 'q' to quit, or 's' to set a tile on fire: " << std::endl;
             char userInput;
             std::cin >> userInput;
