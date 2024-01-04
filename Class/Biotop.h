@@ -34,6 +34,7 @@ public:
         this->posY = posY;
         this->stav = stav;
         this->zhorena = false;
+        this->zaciatokHorenia = 0;
     }
     int getPosX() const {
         return posX;
@@ -48,16 +49,16 @@ public:
         return zhorena;
     }
     void setZhorena(bool zhorena) {
-        Biotop::zhorena = zhorena;
+        this->zhorena = zhorena;
     }
     void setStav(BiotopEnum stav) {
-        Biotop::stav = stav;
+        this->stav = stav;
     }
     void setPosX(int posX) {
-        Biotop::posX = posX;
+        this->posX = posX;
     }
     void setPosY(int posY) {
-        Biotop::posY = posY;
+        this->posY = posY;
     }
 
     bool isFlamable() {
@@ -68,7 +69,7 @@ public:
         return this->zaciatokHorenia;
     }
     void setZaciatokHorenia(int Horenia) {
-        this->zaciatokHorenia = zaciatokHorenia;
+        this->zaciatokHorenia = Horenia;
     }
 };
 
