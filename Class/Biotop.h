@@ -51,7 +51,7 @@ public:
         Biotop::zhorena = zhorena;
     }
     void setStav(BiotopEnum stav) {
-        Biotop::stav = stav;
+         Biotop::stav = stav;
     }
     void setPosX(int posX) {
         Biotop::posX = posX;
