@@ -106,6 +106,16 @@ public:
         }
     }
 
+    void setFlame(int x, int y) {
+        if (positionIsValid(x, y)) {
+            if (!biotop[x][y].isFlamable()) {
+                std::cout << "Bunka nie je horlava" << std::endl;
+                return;
+            }
+            biotop[x][y].setStav(POZIAR);
+        }
+    }
+
 };
 
 
