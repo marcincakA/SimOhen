@@ -58,6 +58,10 @@ public:
         Biotop::posY = posY;
     }
 
+    bool isFlamable() {
+        return stav == LES || stav == LUKA;
+    }
+
 };
 
 

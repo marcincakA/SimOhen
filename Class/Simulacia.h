@@ -23,7 +23,7 @@ private:
     Biotop** biotop;
     VietorEnum vietor;
     unsigned int pocetSimulacii = 0;
-    unsigned int zaciatokVetrat = 0;
+    unsigned int zaciatokVetra = 0;
 public:
     Simulacia(int sizeX, int sizeY) : sizeX(sizeX), sizeY(sizeY) {
         biotop = new Biotop*[sizeX];
@@ -58,6 +58,9 @@ public:
             std::random_device rd;
             std::mt19937 gen(rd());
             std::uniform_int_distribution<> dis(0, 100);
+            int cislo = dis(gen);
+            int cislo2 = dis(gen);
+            //mapa init random hodnoty
             for(int j = 0; j < sizeY; j++) {
                 biotop[i][j].setPosX(i);
                 biotop[i][j].setPosY(j);
@@ -72,6 +75,34 @@ public:
                     biotop[i][j].setStav(VODA);
                 }
             }
+
+            //vietor init
+            if (cislo2 <= 90) {
+                this->vietor = BEZVETRIE;
+            } else {
+                int smerVetra = dis(gen);
+                if (smerVetra <= 25) {
+                    this->vietor = SEVER;
+                } else if (smerVetra <= 50) {
+                    this->vietor = VYCHOD;
+                } else if (smerVetra <= 75) {
+                    this->vietor = JUH;
+                } else {
+                    this->vietor = ZAPAD;
+                }
+                this->zaciatokVetra = 1;
+            }
+        }
+    }
+
+    //zatial takto neskor treba producent a konzument
+    void print() {
+        std::cout << "Smer vetra: " << this->vietor << std::endl;
+        for(int i = 0; i < sizeX; i++) {
+            for(int j = 0; j < sizeY; j++) {
+                std::cout << biotop[i][j].getStav() << " ";
+            }
+            std::cout << std::endl;
         }
     }
 

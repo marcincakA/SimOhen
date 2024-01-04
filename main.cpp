@@ -1,6 +1,8 @@
 #include <iostream>
+#include "Class/Simulacia.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    Simulacia* simulacia = new Simulacia(10, 10);
+    simulacia->init(25, 25, 25, 25);
+    simulacia->print();
 }
