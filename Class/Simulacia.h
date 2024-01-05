@@ -7,6 +7,7 @@
 #include "Biotop.h"
 #include <random>
 #include <iostream>
+#include <fstream>
 
 
 enum VietorEnum {
@@ -408,6 +409,63 @@ public:
                 regenerateBiotop(i, j);
             }
         }
+    }
+
+    void saveFile(const char* fileName) {
+        std::ofstream file;
+        file.open(fileName);
+        if (!file.is_open()) {
+            std::cerr << "invalid file name" << std::endl;
+            return;
+        }
+
+        file << this->sizeX << " " << this->sizeY<< " "  << this->vietor << " ";
+
+        for(int i = 0; i < this->sizeX; i++) {
+            for(int j = 0; j < this->sizeY; j++) {
+                file << biotop[i][j].getStav() << " ";
+            }
+        }
+
+        file.close();
+        std::cout << "Simulation saved!" << std::endl;
+    }
+
+    void loadFile(const char* fileName) {
+        std::ifstream file;
+        file.open(fileName);
+        if (!file.is_open()) {
+            std::cerr << "invalid file name" << std::endl;
+            return;
+        }
+        // vymazeme najprv mapu aby sa vypraznila pamat
+        for (int i = 0; i < sizeX; ++i) {
+            delete[] biotop[i];
+        }
+        delete[] biotop;
+
+        int nacitanyVietor;
+        file >> this->sizeX >> this->sizeY >> nacitanyVietor;
+        this->vietor = static_cast<VietorEnum>(nacitanyVietor);
+
+        // vytvorime novu mapu z nacitanych hodnot
+        biotop = new Biotop*[this->sizeX];
+        for(int i = 0; i < this->sizeX; i++) {
+            biotop[i] = new Biotop[this->sizeY];
+        }
+        // nastavime stavu bunky
+        for(int i = 0; i < this->sizeX; i++) {
+            for(int j = 0; j < this->sizeY; j++) {
+                int nacitanyBiotop;
+                file >> nacitanyBiotop;
+                BiotopEnum spracovanyBiotop= static_cast<BiotopEnum>(nacitanyBiotop);
+                biotop[i][j].setStav(spracovanyBiotop);
+            }
+        }
+        std::cout << this->sizeX << std::endl;
+        std::cout << this->sizeY << std::endl;
+        std::cout << this->vietor << std::endl;
+        std::cout << "Simulation loaded!" << std::endl;
     }
 
 };

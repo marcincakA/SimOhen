@@ -39,13 +39,15 @@ int main() {
         simulacia.print();
         // TODO: Nejak to nefunguje jak by to malo! Wtf kaslem na to idem spat...
         if (iskeypressed( 500 )) { // kontroluje, či bola stisknuta nejaka klavesa...
-            std::cout << "Press 'q' to quit, or 's' to set a tile on fire: " << std::endl;
+            std::cout << "Press 'f' to set a tile on fire: " << std::endl;
+            std::cout << "Press 's' to Save and 'l' to Load the map from a file" << std::endl;
+            std::cout << "Press 'q' to quit" << std::endl;
             char userInput;
             std::cin >> userInput;
 
             if (userInput  == 'q') {
                 break; // Exit the loop if the user presses 'q'
-            } else if (userInput == 's') {
+            } else if (userInput == 'f') {
                 // Ask the user how many times to call setFlame
                 int numSetFlame;
                 std::cout << "Enter how many times to call setFlame: ";
@@ -60,6 +62,18 @@ int main() {
                 }
 
                 simulacia.print();
+            }
+            else if (userInput == 's') {    // SAVE FILE
+                std::cout << "Enter a filename to save the simulation : ";
+                std::string fileName;
+                std::cin >> fileName;
+                simulacia.saveFile(fileName.c_str());
+            }
+            else if (userInput == 'l') {    // LOAD FILE
+                std::cout << "Enter a filename to load the simulation : ";
+                std::string fileName;
+                std::cin >> fileName;
+                simulacia.loadFile(fileName.c_str());
             }
             else {
                 // Clear the input buffer to handle unexpected input
