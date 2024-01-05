@@ -462,9 +462,6 @@ public:
                 biotop[i][j].setStav(spracovanyBiotop);
             }
         }
-        std::cout << this->sizeX << std::endl;
-        std::cout << this->sizeY << std::endl;
-        std::cout << this->vietor << std::endl;
         std::cout << "Simulation loaded!" << std::endl;
     }
 
