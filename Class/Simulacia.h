@@ -443,6 +443,7 @@ public:
             delete[] biotop[i];
         }
         delete[] biotop;
+        // to to treba keby nahodou ta nacitana mapa bola mensia ako ta starsia aby neboli memory leaky lebo by ostali v pamati stare data
 
         int nacitanyVietor;
         file >> this->sizeX >> this->sizeY >> nacitanyVietor;
@@ -450,11 +451,9 @@ public:
 
         // vytvorime novu mapu z nacitanych hodnot
         biotop = new Biotop*[this->sizeX];
-        for(int i = 0; i < this->sizeX; i++) {
-            biotop[i] = new Biotop[this->sizeY];
-        }
         // nastavime stavu bunky
         for(int i = 0; i < this->sizeX; i++) {
+            biotop[i] = new Biotop[this->sizeY];
             for(int j = 0; j < this->sizeY; j++) {
                 int nacitanyBiotop;
                 file >> nacitanyBiotop;
