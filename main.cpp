@@ -14,7 +14,7 @@ bool iskeypressed( unsigned timeout_ms = 0 )
 #endif
 #ifdef linux        // čítanie klávesy z linuxu
 #include <stdio.h>
-bool iskeypressed( unsigned timeout_ms = 0 )
+/*bool iskeypressed( unsigned timeout_ms = 0 )
 {
     if (!initialized) return false;
 
@@ -22,10 +22,10 @@ bool iskeypressed( unsigned timeout_ms = 0 )
     pls[ 0 ].fd     = STDIN_FILENO;
     pls[ 0 ].events = POLLIN | POLLPRI;
     return poll( pls, 1, timeout_ms ) > 0;
-}
+}*/
 #endif
 
-int main() {
+/*int main() {
     std::cout << "Fire simluation!" << std::endl;
     std::cout << "Press any key to pause simulation and enter a command." << std::endl;
 
@@ -84,5 +84,39 @@ int main() {
         }
     }
 
+    return 0;
+}*/
+int main() {
+    Simulacia* sim;
+    std::cout << "Fire simluation!" << std::endl;
+    std::cout << "C - to create simulation with given probabilities of biotops." << std::endl
+              << "L - load simulation from file" << std::endl;
+    //moznost vytvorit simulaciu na zaklade pravdepodobnosti alebo nacitat simulaciu zo suboru
+    char userInput;
+    std::cin >> userInput;
+    switch (userInput) {
+        case 'C':
+        {
+            std::cout << "Enter probabilities of biotops: " << std::endl;
+            int percentoLes, percentoLuka, percentoSkala, percentoVoda, sizeX,  sizeY;
+            std::cin >> percentoLes >> percentoLuka >> percentoSkala >> percentoVoda;
+            std::cout<< "Enter size of simulation: " << std::endl;
+            std::cin >> sizeX >> sizeY;
+            sim = new Simulacia(sizeX, sizeY);
+            if (!sim) {
+                std::cerr << "Failed to create simulation!" << std::endl;
+                return 1;
+            }
+            sim->init(percentoLes, percentoLuka, percentoSkala, percentoVoda);
+            break;
+        }
+    }
+
+    // Run simulation in an infinite loop
+    bool quit = false;
+    while (!quit) {
+    }
+
+    delete sim;
     return 0;
 }
